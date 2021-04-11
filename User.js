@@ -32,7 +32,6 @@ export default class Users extends React.Component {
                     <Avatar.Image size={100}  source={{uri: this.state.users.avatar}}/>
                     <Title>{this.state.users.name}</Title>
                     <Text>Doit boire encore : {this.state.users.shot} shots</Text>
-                    {console.log(this.props)}
                     <View style={{    flexDirection: 'row', justifyContent: 'space-between'}}>
                         <Button
                             onPress={() => this.props.navigation.navigate('Ajouter des shots', {user})}    

@@ -17,7 +17,6 @@ export default class Users extends React.Component {
 
     postShot() {
         const shots = this.props.route.params.user.shot + this.state.shot
-        console.log(shots)
         fetch('http://192.168.1.51:5000/update', {
             method: "POST",
             headers: {
@@ -47,7 +46,6 @@ export default class Users extends React.Component {
                         onChange={shot => this.setState({shot})}
                     />
                     <Button onPress={() => {
-                        console.log("presse")
                         this.postShot()
                         this.props.navigation.navigate('Users')
                     }}>Ajouter</Button>
