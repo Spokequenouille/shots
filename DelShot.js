@@ -17,7 +17,7 @@ export default class Users extends React.Component {
 
     postShot() {
         const shots = this.props.route.params.user.shot - this.state.shot
-        fetch('http://192.168.1.51:5000/update', {
+        fetch('http://localhost:5000/update', {
             method: "POST",
             headers: {
                 'Accept': 'application/json',

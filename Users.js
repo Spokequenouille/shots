@@ -15,7 +15,7 @@ export default class Users extends React.Component {
     }
 
     callApi() {
-        return fetch('http://192.168.1.51:5000/user')
+        return fetch('http://localhost:5000/user')
         .then((res) =>
             res.json()
         )
@@ -28,7 +28,7 @@ export default class Users extends React.Component {
     }
 
 
-    componentDidMount() {
+    /*componentDidMount() {
         return fetch('http://192.168.1.51:5000/user')
         .then((res) =>
             res.json()
@@ -39,7 +39,7 @@ export default class Users extends React.Component {
                 users: resJson
             })
         )
-    }
+    }*/
     
     render() {
         if (this.props.navigation.addListener('focus', () => {

@@ -12,7 +12,7 @@ export default class Users extends React.Component {
     }
 
     componentDidMount () {
-        return fetch(`http://192.168.1.51:5000/user/${this.props.route.params.user.id}`)
+        return fetch(`http://localhost:5000/user/${this.props.route.params.user.id}`)
             .then((res) =>
                 res.json()
             )
