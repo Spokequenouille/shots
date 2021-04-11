@@ -14,7 +14,7 @@ export default class Users extends React.Component {
     }
 
     callApi() {
-        return fetch('http://172.20.10.14:5000/user')
+        return fetch('http://192.168.1.51:5000/user')
         .then((res) =>
             res.json()
         )
