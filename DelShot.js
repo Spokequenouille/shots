@@ -35,7 +35,7 @@ export default class Users extends React.Component {
     render() {
         return(
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                    <Avatar.Icon size={100} icon="folder" />
+                    <Avatar.Image size={100}  source={{uri: this.props.route.params.user.avatar}}/>
                     <Title>Retirer des shots à {this.props.route.params.user.name}</Title>
                     <InputSpinner
                         min={0}
