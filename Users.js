@@ -15,7 +15,7 @@ export default class Users extends React.Component {
     }
 
     callApi() {
-        return fetch('http://localhost:5000/user')
+        return fetch('http://vps-f48cdbb3.vps.ovh.net:5000/user')
         .then((res) =>
             res.json()
         )
